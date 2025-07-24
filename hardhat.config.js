@@ -30,11 +30,11 @@ module.exports = {
       gasPrice: 1000000000, // 1 gwei
     },
   },
+  sourcify: {
+    enabled: true
+  },
   etherscan: {
-    apiKey: {
-      alfajores: process.env.CELOSCAN_API_KEY || "dummy",
-      celo: process.env.CELOSCAN_API_KEY || "dummy",
-    },
+    apiKey: process.env.CELOSCAN_API_KEY || "dummy",
     customChains: [
       {
         network: "alfajores",
