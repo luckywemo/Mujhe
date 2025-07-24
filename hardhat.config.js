@@ -27,7 +27,7 @@ module.exports = {
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       chainId: 42220,
       gas: 6000000,
-      gasPrice: 1000000000, // 1 gwei
+      gasPrice: 100000000000, // 100 gwei (very high to definitely exceed base fee floor)
     },
   },
   sourcify: {

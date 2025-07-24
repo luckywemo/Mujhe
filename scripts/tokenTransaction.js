@@ -30,8 +30,8 @@ async function main() {
     console.log("Symbol:", symbol);
     console.log("Your Balance:", ethers.formatEther(balance), symbol);
     
-    // Make a transfer to a test address
-    const recipient = "0x742d35Cc6634C0532925a3b8D4C0C1e2b89f4c5c";
+    // Make a transfer to yourself (safe test)
+    const recipient = signer.address; // Send to yourself
     const amount = ethers.parseEther("5"); // Transfer 5 tokens
     
     console.log("\n📤 Making Transfer:");
