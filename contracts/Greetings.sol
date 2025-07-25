@@ -23,7 +23,7 @@ contract Greetings {
     // Constructor
     constructor() {
         owner = msg.sender;
-        defaultGreeting = "Hello from CELO blockchain! 🌟";
+        defaultGreeting = "Hello from CELO blockchain!";
         totalGreetings = 0;
     }
     
@@ -138,7 +138,7 @@ contract Greetings {
     function getRandomGreeting() public view returns (address greeter, string memory greeting) {
         require(greeters.length > 0, "No greetings available");
         
-        uint256 randomIndex = uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty, msg.sender))) % greeters.length;
+        uint256 randomIndex = uint256(keccak256(abi.encodePacked(block.timestamp, block.prevrandao, msg.sender))) % greeters.length;
         greeter = greeters[randomIndex];
         greeting = personalGreetings[greeter];
     }
