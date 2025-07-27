@@ -1,7 +1,7 @@
 async function main() {
   const { ethers } = require("hardhat");
   
-  console.log("🎯 Creating your first task on TodoList!");
+  console.log("🎯 Creating your third task on TodoList!");
   
   // Contract address
   const todoListAddress = "0xD50fCE5736019dB84f7033Ab18Aa36064035625c";
@@ -22,8 +22,8 @@ async function main() {
   console.log("CELO balance:", ethers.formatEther(balance));
   
   try {
-    // Create your first task
-    const title = "Learn CELO blockchain development";
+    // Create your third task
+    const title = "Learn CELO blockchain development 3";
     const description = "Complete CELO smart contract tutorial and deploy contracts";
     const priority = Priority.HIGH;
     const dueDate = Math.floor(Date.now() / 1000) + (7 * 24 * 60 * 60); // 1 week
