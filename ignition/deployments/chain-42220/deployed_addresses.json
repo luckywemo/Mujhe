@@ -1,7 +1,3 @@
 {
-  "GreetingsModule#Greetings": "0x8aFf179D4b62cFE316Cf097Bd9d5E31bfC307584",
-  "CounterModule#Counter": "0xf60e41F3155411b9E2422b6A5865c81d1b6FA40d",
-  "TodoListModule#TodoList": "0xD50fCE5736019dB84f7033Ab18Aa36064035625c",
-  "VotingSystemModule#VotingSystem": "0x75E3479A9C11BCa47ff08fc1f2c6e4fD695eDEB8",
-  "NFTMarketplaceModule#NFTMarketplace": "0x4A6824768C7813D33d874d46998Fd2a499223b53"
+  "TimeLockMultiSigV2Module#TimeLockMultiSig": "0x4c7384D3A3F6c9eB456e1eF778717936E5cd25a7"
 }

@@ -1,17 +1,19 @@
 const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
+const { ethers } = require("hardhat");
 
-module.exports = buildModule("TimeLockMultiSigModule", (m) => {
-  // Sample configuration for a 2-of-3 multisig wallet
+module.exports = buildModule("TimeLockMultiSigV2Module", (m) => {
+  // Configuration for a 2-of-3 multisig wallet
+  // Using proper checksummed addresses with ethers.getAddress()
   const owners = [
-    "0x1234567890123456789012345678901234567890", // Replace with actual addresses
-    "0x2345678901234567890123456789012345678901",
-    "0x3456789012345678901234567890123456789012"
+    ethers.getAddress("0x1dBFDd86CcE60423fd253c5A99aef842dBbA0a4A"), // Owner 1 - Your deployer address
+    ethers.getAddress("0xf2B6458901a9e916C3BcDCE63B17468E78A3d8d2"), // Owner 2 - Replace with real address  
+    ethers.getAddress("0x0b4AC6E7e2367610FE572d0E8cE1eCc520dA6799")  // Owner 3 - Replace with real address
   ];
   
   const threshold = 2; // 2-of-3 signatures required
   const timeLockDelay = 24 * 60 * 60; // 24 hours in seconds
-  const dailyLimit = m.parseEther("10.0"); // 10 CELO daily limit
-  const instantLimit = m.parseEther("1.0"); // 1 CELO instant execution limit
+  const dailyLimit = ethers.parseEther("10.0"); // 10 CELO daily limit
+  const instantLimit = ethers.parseEther("1.0"); // 1 CELO instant execution limit
   
   const timeLockMultiSig = m.contract("TimeLockMultiSig", [
     owners,
