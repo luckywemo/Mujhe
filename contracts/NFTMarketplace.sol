@@ -496,9 +496,9 @@ contract NFTMarketplace is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, P
         uint256 createdAt,
         string memory category,
         uint256 collectionId,
-        string memory tokenURI
+        string memory uri
     ) {
-        NFTItem memory item = nftItems[tokenId];
+        NFTItem storage item = nftItems[tokenId];
         return (
             item.tokenId,
             item.creator,
@@ -509,7 +509,7 @@ contract NFTMarketplace is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, P
             item.createdAt,
             item.category,
             item.collectionId,
-            tokenURI(tokenId)
+            super.tokenURI(tokenId)
         );
     }
     
