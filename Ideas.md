@@ -1,10 +1,1 @@
-1. Decentralized Voting System
-2. NFT Marketplace with Royalties
-3. Time-Locked Multi-Signature Wallet
-4. Decentralized Insurance
-5. Decentralized Prediction Market
-6. Decentralized Identity Verification
-7. Decentralized Supply Chain Management
-8. Decentralized Access Control
-9. Decentralized Data Storage
-10. Decentralized File Sharing
+1. 📝 Message Board - Store and retrieve public messages 2. 🎲 Random Number Generator - Generate verifiable random numbers 3. 💰 Tip Jar - Collect tips with withdrawal functionality 4. 🏆 Leaderboard - Track high scores or achievements 5. 📊 Simple Poll - Create basic yes/no polls 6. 🔐 Password Manager - Store encrypted password hints 7. 🎁 Gift Card - Create and redeem digital gift cards 8. 📅 Event RSVP - Simple event registration system 9. 🏪 Basic Marketplace - Buy/sell items with escrow 10. 🎯 Bounty Board - Post and claim simple bounties
