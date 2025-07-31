@@ -1,5 +1,6 @@
 {
   "TimeLockMultiSigV2Module#TimeLockMultiSig": "0x4c7384D3A3F6c9eB456e1eF778717936E5cd25a7",
   "DecentralizedInsuranceModule#DecentralizedInsurance": "0x23bCdbD356Bf0c872146EF52c229835050D26957",
-  "MessageBoardModule#MessageBoard": "0xA3Af6C73243c4b65fCeF11008063290fdb1B59A1"
+  "MessageBoardModule#MessageBoard": "0xA3Af6C73243c4b65fCeF11008063290fdb1B59A1",
+  "RandomNumberGeneratorModule#RandomNumberGenerator": "0xfB8B4D533D849B02ae70a4B9747bBa88f31E7C24"
 }
