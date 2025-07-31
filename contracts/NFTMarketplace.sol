@@ -169,13 +169,13 @@ contract NFTMarketplace is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, P
      * @dev Mint a new NFT
      */
     function mintNFT(
-        string memory tokenURI,
+        string memory _tokenURI,
         uint256 royaltyPercentage,
         string memory category,
         uint256 collectionId
     ) public whenNotPaused returns (uint256) {
         require(royaltyPercentage <= MAX_ROYALTY, "Royalty too high");
-        require(bytes(tokenURI).length > 0, "Token URI cannot be empty");
+        require(bytes(_tokenURI).length > 0, "Token URI cannot be empty");
         
         // Validate collection if specified
         if (collectionId > 0) {
@@ -187,7 +187,7 @@ contract NFTMarketplace is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, P
         _tokenIdCounter++;
         
         _safeMint(msg.sender, tokenId);
-        _setTokenURI(tokenId, tokenURI);
+        _setTokenURI(tokenId, _tokenURI);
         
         // Create NFT item
         nftItems[tokenId] = NFTItem({
@@ -212,7 +212,7 @@ contract NFTMarketplace is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard, P
             collections[collectionId].tokenIds.push(tokenId);
         }
         
-        emit NFTMinted(tokenId, msg.sender, tokenURI, royaltyPercentage, category, collectionId);
+        emit NFTMinted(tokenId, msg.sender, _tokenURI, royaltyPercentage, category, collectionId);
         
         return tokenId;
     }
