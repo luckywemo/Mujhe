@@ -1,4 +1,4 @@
-git const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
+const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
 
 module.exports = buildModule("TipJarModule", (m) => {
   // The contract's constructor requires the initial owner's address.
