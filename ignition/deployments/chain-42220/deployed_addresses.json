@@ -4,5 +4,6 @@
   "MessageBoardModule#MessageBoard": "0xA3Af6C73243c4b65fCeF11008063290fdb1B59A1",
   "RandomNumberGeneratorModule#RandomNumberGenerator": "0xfB8B4D533D849B02ae70a4B9747bBa88f31E7C24",
   "TipJarModule#TipJar": "0x8c7FF72Cd2AfBa97Bf4F1a42D1e50e01E114a1AE",
-  "PredictionMarketModule#PredictionMarket": "0x3Ed9624930B82360e77d44149D6953f7972617E6"
+  "PredictionMarketModule#PredictionMarket": "0x3Ed9624930B82360e77d44149D6953f7972617E6",
+  "SimplePollModule#SimplePoll": "0xd57007D7b057982070F9122C2Fe1452df78f0fB3"
 }
